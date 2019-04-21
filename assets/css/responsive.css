@@ -1,0 +1,515 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+.single-service-special {
+  padding: 20px;
+}
+.top-service-list h4 {
+  margin: 20px 0px;
+}
+.btn-contact-us {
+  margin-top: 20px;
+}
+.member-social-profile a i {
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 5px;
+  width: 30px;
+}
+.member-social-profile {
+  top: -18px;
+}
+.single-testimonial {
+  padding: 15px;
+}
+.price-table-header {
+  padding: 20px 0px;
+}
+.active-package .price-table-header {
+  padding: 20px;
+}
+.single-slide h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.app-store-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #7063cf;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  margin-right: 1px;
+  box-sizing: border-box;
+  border: 2px solid #7063cf;
+}
+.testimonial {
+  padding: 20px;
+  padding-top: 70px;
+}
+
+.app-single-countup {
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+.app-single-countup i,
+.app-single-countup span {
+  font-size: 30px;
+}
+
+}
+
+ 
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+.hero-section, .hero-slider, .hero-slider div {
+  height: 500px;
+}
+.btn-square {
+  padding: 6px 20px;
+}
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.app-about-section .col-xl-4.col-md-4 {
+  padding: 0px 10px;
+}
+.app-featured-img {
+  margin-bottom: 40px;
+}
+h4 {
+  font-size: 16px;
+}
+.features-name span {
+  font-size: 13px;
+}
+body,
+p {
+  font-size: 13px;
+}
+.single-about-item h3 {
+  font-size: 18px;
+  margin: 15px 0px;
+}
+.app-information-content h2 {
+  font-size: 28px;
+  padding-right: 0px;
+}
+
+.app-section-title {
+  margin-top: -8px;
+  margin-bottom: 50px;
+}
+
+.app-price-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.price-package-btn ul#pills-tab {
+  border-radius: 0;
+}
+.app-store-btn {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+.call-to-action h2 {
+  font-size: 26px;
+}
+
+header {
+    position: relative;
+}
+.top-header {
+  background: #fff !important;
+}
+.sm-hidden {
+  display: none;
+}
+.navbar {
+  padding: 0px;
+  transition: all 0.3s linear 0s;
+  z-index: 111;
+}
+.logo-scrolled {
+  display: block;
+  visibility: visible;
+}
+.navbar-collapse.justify-content-end.collapse.show li:hover a {
+    background: #fff none repeat scroll 0 0;
+    color: #192f59;
+}
+.navbar-nav {
+  text-align: center;
+  background: #192f59;
+}
+.is-sticky .navbar {
+  padding: 0px;
+}
+.is-sticky .main-menu .nav-link {
+  color: #fff;
+}
+.is-sticky .main-menu .nav-link.active {
+  color: #fff;
+}
+.sign-btn {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+  right: auto;
+}
+.navbar-nav .nav-item:hover > .nav-link {
+  color: #fff;
+}
+.sign-btn a {
+  padding: 7px 20px;
+}
+.main-menu .nav-link, .navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+}
+.single-slide h1 {
+  font-size: 40px;
+}
+
+
+}
+ 
+/* Extra small Device. */
+@media (max-width: 767px) {
+
+header {
+    position: relative;
+}
+.top-header {
+  background: #fff !important;
+}
+.is-sticky .navbar {
+  padding: 0px;
+}
+.sm-hidden {
+  display: none;
+}
+.navbar {
+    padding: 0px;
+    transition: all 0.3s linear 0s;
+}
+.logo-scrolled {
+  display: block;
+  visibility: visible;
+}
+.section-padding {
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+.section-padding-100 {
+  padding: 50px 0;
+}
+.navbar-nav {
+  text-align: center;
+  background: #192f59;
+}
+.is-sticky .main-menu .nav-link,
+.is-sticky .main-menu .nav-link.active {
+  color: #fff;
+}
+
+.hero-section, .hero-slider, .hero-slider div {
+  height: auto;
+}
+.single-slide h1 {
+  font-size: 24px;
+}
+p {
+  line-height: 20px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.single-about-item h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+.single-about-item p {
+  font-size: 12px;
+}
+.btn-square {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 5px;
+}
+.hero-section {
+  position: relative;
+  padding: 50px 0px;
+}
+.slider-int .owl-nav div {
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  margin-top: -15px;
+}
+.slide-content {
+  margin-bottom: 30px;
+}
+#scrollUp {
+  font-size: 12px;
+  height: 30px;
+  line-height: 33px;
+  width: 30px;
+}
+.app-featured-list li {
+  display: flex;
+  margin-bottom: 20px;
+}
+.features-name span {
+  font-size: 13px;
+  line-height: 1;
+}
+.app-featured-list li i {
+  font-size: 30px;
+  padding-right: 15px;
+  margin-top: -4px;
+}
+
+
+.thumbnail-box span {
+  display: none;
+}
+.app-section-title h2 {
+  font-size: 24px;
+}
+.app-section-title span {
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+.app-featured-list {
+  margin-top: 30px;
+}
+.app-information-content h2 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 13px;
+  padding-right: 0px;
+  display: block;
+}
+
+.app-information-content {
+  text-align: center;
+}
+.app-information-content p {
+  margin-top: 0;
+}
+.app-btn-learn-more {
+  padding: 6px 20px;
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 12px;
+}
+.app-information-thumbnail {
+  margin: 15px 0px;
+}
+.app-section-title {
+  margin-top: -8px;
+  margin-bottom: 30px;
+}
+.app-price-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.app-price-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.single-pricing-table {
+  margin-bottom: 30px;
+}
+.single-pricing-table {
+  padding: 30px;
+}
+.purchase-btn {
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.single-pricing-table ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.call-to-action h2 {
+  font-weight: 800;
+  font-size: 18px;
+}
+.app-store-btn {
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: normal;
+  display: inline-block;
+  margin-top: 10px;
+}
+.app-download-link {
+  margin: 30px 0px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+.testimonial {
+  padding: 15px;
+}
+.subscribe-box form input {
+  width: 100%;
+  padding-left: 15px;
+  height: 40px;
+  font-size: 14px;
+}
+.sub-box {
+  position: relative;
+  text-align: center;
+}
+.subscribe-box form button {
+  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  right: 0;
+  top: 0;
+  background: #40339f;
+  color: #fff;
+  margin-top: 30px;
+  transform: translateY(0%);
+}
+.call-to-action {
+  margin-top: 30px;
+}
+.app-store-btn {
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.app-store-btn i {
+  font-size: 16px;
+}
+.app-single-countup span {
+  font-size: 24px;
+  margin: 10px 0px;
+}
+.app-single-countup i {
+  font-size: 30px;
+  line-height: 1;
+}
+.is-sticky .sign-btn {
+  top: 11px;
+}
+.sign-btn {
+  position: absolute;
+  left: 50%;
+  top: 11px;
+  transform: translateX(-50%);
+  right: auto;
+}
+.single-slide h1 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+.single-slide h1 {
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 13px;
+  line-height: 1.2;
+}
+.navbar-collapse.justify-content-end.collapse.show {}
+.navbar-collapse.justify-content-end.collapse.show li:hover a {
+    color: #fff;
+}
+
+.nav-pills .nav-link {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.sign-btn a {
+  padding: 6px 20px;
+  font-size: 12px;
+}
+.app-section-title h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.section-padding-70 {
+  padding: 30px 0px;
+}
+.col-xl-4.col-md-4.col-xs-12.col-sm-5.justify-content-end.d-flex {
+  display: block !important;
+}
+.footer-section {
+  text-align: center;
+}
+.footer-copyright p {
+  margin-bottom: 15px;
+}
+.single-app-testimonial img {
+  position: relative;
+  left: 0;
+  transform: translateY(0%);
+  border: 2px solid #7063cf;
+  box-sizing: border-box;
+  padding: 5px;
+  background: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 0;
+  margin-top: 15px;
+}
+.single-widgets ul li a {
+  font-weight: 400;
+}
+.main-menu .nav-link, .navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+}
+.is-sticky .main-menu .nav-link:hover,
+.main-menu .nav-link:hover {
+  color: #fff !important;
+  background: #7063cf;
+}
+
+
+}
+ 
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+ 
+}
+
+/* special css */
+@media (max-width: 360px) { 
+.sign-btn {
+  display: none;
+}
+.single-pricing-table {
+  width: 100%;
+}
+
+
+
+}
