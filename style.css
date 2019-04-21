@@ -1,0 +1,818 @@
+/*
+Template: Appnine - App Landing HTML Page
+Author: spinetheme
+Author URI: http://spinetheme.com/appnine
+Description: APPNINE - App Landing Page Template.
+Version: 1.0
+/*
+
+=================================
+|***  Table of contents:   ***|
+=================================
+
+1. General styles
+2. Typography
+3. Helpers
+4. Preloader & Go up button
+5. Header and Navbar  
+6. Hero Area - Slider
+7. About Section
+8. Advance Featured section
+9. Call To Action section
+10. Fun Fact CountUp section
+11. Price  Section
+12. testimonial Section
+13. Footer Section
+14. Footer Widgets Section
+*/
+
+/* ----------------------------------------
+   ----------- 1.GENERAL STYLES -----------
+   ---------------------------------------- */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #918bbf;
+}
+a:focus {
+ outline: 0 solid
+}
+a {
+   transition: all 0.3s ease 0s;
+   text-decoration: none;
+}
+img {
+ max-width: 100%;
+ height: auto;
+}
+*::after, 
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input::-moz-focus-inner {
+    border: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+ -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a:hover {
+  text-decoration: none;
+  outline: none !important;
+}
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none !important;
+}
+::placeholder {
+    color: #7063cf;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #7063cf;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #7063cf;
+}
+input:focus {
+    border: transparent;
+    outline: none;
+}
+.form-control:focus {
+  border-color: #ccc;
+  box-shadow: none;
+  outline: 0 none;
+}
+blockquote {
+  background-color: #f1f1f1;
+  padding: 30px;
+  margin: 20px 0px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+  border-left: 5px solid #7063cf;
+  display: block;
+}
+
+.hero-section:hover .slider-int .owl-nav div {
+  visibility: visible;
+  opacity: 1;
+}
+.slider-int .owl-nav div {
+  position: absolute;
+  left: 30px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  background: #f8f8f8;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 400;
+  margin-top: -25px;
+  transition: .3s;
+  border-radius: 50%;
+  color: #7063cf;
+  visibility: hidden;
+  opacity: 0;
+}
+.slider-int .owl-nav div.owl-next {
+  left: auto;
+  right: 30px;
+}
+.slider-int .owl-nav div:hover {
+  background: #7063cf;
+  color:#fff;
+}
+.app-section-title {
+  margin-top: -8px;
+  margin-bottom: 80px;
+}
+.app-section-title span {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.app-section-title h2 {
+  text-transform: capitalize;
+}
+
+/* ----------------------------------------
+   -------------- 2.TYPOGRAPHY ------------
+   ---------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Poppins', sans-serif;
+   margin: 0px;
+   font-weight: 700;
+   color: #7063cf;
+   line-height: 1.5;
+}
+h1 {
+  font-size: 45px;
+  line-height: 60px;
+  font-weight: 800;
+}
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+  font-weight: normal;
+}
+p {
+  color: #918bbf;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 15px;
+}
+a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  outline: none !important;
+  cursor: pointer;
+  line-height: 24px;
+}
+ul li {
+  display: block;
+}
+
+/* ----------------------------------------
+   --------------- 3.HELPERS --------------
+   ---------------------------------------- */
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.section-padding-100 {
+  padding: 100px 0px;
+}
+.section-padding-top {
+  padding-top: 100px;
+}
+.section-padding-50 {
+  padding: 50px 0px;
+}
+.section-padding-70 {
+  padding: 70px 0px;
+}
+.text-justify {
+    text-align: justify;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.no-padding {
+  padding: 0;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.padding-80 {
+    padding: 80px 0px;
+    padding-bottom: 70px;
+}
+/* ----------------------------------------
+   -------------- 4.PRELOADER -------------
+   ---------------------------------------- */
+.preloading {
+  background-color: #fff;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+.spinner {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#scrollUp {
+  background-color: #7063cf;
+  border-radius: 50%;
+  bottom: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  height: 50px;
+  line-height: 54px;
+  right: 20px;
+  text-align: center;
+  width: 50px;
+  box-shadow: 0 10px 20px 0 rgba(23, 22, 49, 0.1);
+}
+
+/* ----------------------------------------
+   --------- 5. Header and Navbar  --------
+   ---------------------------------------- */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.navbar-nav .nav-item.active > .nav-link, .navbar-nav .nav-item:active:focus > .nav-link, .navbar-nav .nav-item:active > .nav-link, .navbar-nav .nav-item:focus > .nav-link, .navbar-nav .nav-item:hover > .nav-link {
+  color: #7063cf;
+}
+.navbar {
+  padding: 10px 0;
+  transition: all 0.3s linear 0s;
+}
+.navbar-toggler i {
+  color: #192682;
+}
+.is-sticky .main-menu .nav-link.active {
+    color: #7063cf;
+    transition: all 0.3s linear 0s;   
+}
+.main-menu .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link {
+      color: #7063cf;
+      font-size: 12px;
+      text-transform: uppercase;
+}
+.is-sticky #sticky-nav {
+  box-shadow: 0 10px 20px 0 rgba(23, 22, 49, 0.1);
+  z-index: 224;
+}
+.is-sticky #sticky-nav {
+  background-color: #fff;
+}
+.is-sticky .main-menu .nav-link {
+  color: #7063cf;
+}
+.is-sticky .navbar {
+  padding: 4px 0px;
+}
+.logo-display {
+    transition: all 0.1s linear 0s;
+}
+.is-sticky .main-menu .logo-display {
+  display: none;
+}
+.logo-scrolled {
+  display: none;
+  visibility: hidden;
+  transition: all 0.1s linear 0s;
+}
+.is-sticky .main-menu .logo-scrolled {
+  display: inline-block;
+  visibility: visible;
+}
+.sign-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.sign-btn a {
+  background: #7063cf;
+  padding: 10px 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  border-radius: 50px;
+  color: #fff;
+}
+.is-sticky .sign-btn {
+  top: 10px;
+}
+.purchase-btn:hover {
+  color: #fff;
+}
+
+/* --------------------------------------------
+   ---------- 6. Hero Area - Slider  ----------
+   -------------------------------------------- */
+.main-layout {
+  height: 100%;
+}
+.hero-section {
+  overflow: hidden;
+  position: relative;
+}
+.hero-section, .hero-slider, .hero-slider div {
+    height: 100%;
+}
+.single-slide-cell {
+    display: table-cell;
+    height: auto;
+    vertical-align: middle;
+}
+.single-slide-cell div {
+    height: auto;
+}
+.single-slide h4 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.single-slide h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+.single-slide h1 {
+    margin-bottom: 20px;
+}
+.single-slide {
+    background: #fff;
+    display: table;
+    position: relative;
+    z-index: 55;
+    width: 100%;
+}
+
+.single-slide h2,
+.single-slide h4,
+.single-slide h1,
+.single-slide p
+{
+    color: #7063cf;
+}
+.btn-square {
+  padding: 10px 30px;
+  color: #7063cf;
+  border: 2px solid #7063cf;
+  border-radius: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+}
+.btn-square:hover {
+    background: #7063cf;
+    color: #fff;
+}
+.btn-square.btn-square-fill {
+  background: #7063cf;
+  color: #fff;
+  margin-right: 10px;
+}
+.app-hero-thumbnail img {
+}
+
+/* --------------------------------------------
+   ---------- 7. About Section    ---------
+   -------------------------------------------- */
+.single-about-item h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.thumbnail-box span {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 80px;
+  font-weight: 700;
+  color: #ccc;
+  z-index: -1;
+  opacity: .3;
+  top: -25px;
+}
+.thumbnail-box img {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  margin-top: -4px;
+}
+.single-about-item {
+  margin-bottom: 30px;
+}
+
+/* --------------------------------------------
+   ------- 8. Advance Featured section  ------
+   -------------------------------------------- */
+.app-featured-list li {
+  display: flex;
+  margin-bottom: 30px;
+}
+.app-featured-list li i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 40px;
+  padding-right: 30px;
+  color: #7063cf;
+  margin-top: -3px;
+}
+.app-btn-learn-more:hover {
+  color: #fff;
+}
+
+.features-name h4 {
+  margin-top: -3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.app-information-content h2 {
+  font-size: 34px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  padding-right: 50px;
+  display: block;
+}
+.app-btn-learn-more {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #7063cf;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.app-information-content p {
+  margin-top: -7px;
+}
+.app-video-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #7063cf;
+  color: #fff;
+  border-radius: 30px;
+}
+
+/* --------------------------------------------
+   ------- 9. Call To Action section    ------
+   -------------------------------------------- */
+.call-to-action h4, .call-to-action h2 {
+    color: #7063cf;
+    text-transform: uppercase;
+}
+.call-to-action h4 {
+    font-weight: 600;
+    margin-top: -2px;
+}
+.call-to-action h2 {
+    font-weight: 800;
+    margin-top: 5px;
+}
+.call-to-action .btn-call {
+    border: 2px solid #7063cf;
+    color: #fff;
+    padding: 8px 30px;
+    background: #7063cf;
+    display: inline-block;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+.call-to-action .btn-call:hover {
+    background: #fff;
+    color: #7063cf;
+}
+.app-store-btn i {
+    font-size: 26px;
+}
+/* --------------------------------------------
+   ----- 10. Fun Fact CountUp section   -------
+   -------------------------------------------- */
+.app-store-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #7063cf;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    margin-right: 15px;
+    box-sizing: border-box;
+    border: 2px solid #7063cf;
+}
+.app-store-btn i {
+  padding-right: 8px;
+}
+.app-download-link {
+  margin: 30px 0px;
+}
+.app-store-btn:hover {
+  background: #6254c6;
+  color: #fff;
+}
+.app-single-countup {
+  text-align: center;
+  display: block;
+  padding: 30px;
+  color: #7063cf;
+  box-shadow: 0px 1px 5px #998ee6;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.app-single-countup span {
+  font-size: 40px;
+  display: block;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0px;
+}
+.app-single-countup i {
+  font-size: 40px;
+  line-height: 40px;
+}
+/* --------------------------------------------
+   ------- 11. Price  Section  -----------
+   -------------------------------------------- */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #7063cf;
+    border-radius: 0;
+    border: none;
+}
+.price-package-btn ul li a {
+  color: #7063cf;
+  text-transform: capitalize;
+}
+.price-package-btn {
+    display: inline-block;
+}
+.price-package-btn ul#pills-tab {
+    background: #fff;
+    border: 2px solid #7063cf;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.single-pricing-table {
+  background: #fff;
+  float: left;
+  display: inline-block;
+  padding: 50px;
+  box-shadow: 0px 0px 5px #7063cf;
+  position: relative;
+  z-index: 1;
+}
+.single-pricing-table span {
+  font-size: 30px;
+  margin: 20px 0px;
+  display: block;
+}
+.purchase-btn {
+    display: inline-block;
+    background: #7063cf;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.single-pricing-table i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 40px;
+    color: #7063cf;
+}
+.single-pricing-table ul li {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.single-pricing-table.active {
+  z-index: 11;
+}
+.widgets-title {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.single-widgets {
+  margin-bottom: 30px;
+}
+.single-widgets ul li a {
+  color: #918bbf;
+  text-transform: capitalize;
+}
+.single-widgets ul li a:hover {
+    color: #7063cf;
+}
+.subscribe-us-section {
+  background: #7063cf;
+}
+.subscribe-box form input {
+  width: 100%;
+  padding-left: 30px;
+  border: none;
+  height: 80px;
+  position: relative;
+  z-index: 1;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #7063cf;
+}
+.subscribe-box form button {
+  border: none;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  background: #7063cf;
+  color: #fff;
+}
+form level.valid,
+form level.error {
+    opacity: 1;
+    visibility: visible;
+}
+form level.valid,
+form level.error {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 35px;
+    height: 40px;
+    font-size: 14px;
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+#mc-form .form-message {
+  text-align: center;
+  display: block;
+  transition: all.3s;
+  margin: 0;
+  margin-top: 20px;
+  color: #FFF;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.sub-box {
+    position: relative;
+}
+.single-pricing-table i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 40px;
+    color: #7063cf;
+}
+.single-pricing-table.active, .single-pricing-table.active i
+{
+    background: #7063cf;
+    color: #fff;
+}
+.single-pricing-table.active ul li {
+    color: #fff;
+}
+.single-pricing-table.active .purchase-btn {
+    background: #fff;
+    color: #7063cf;
+}
+.single-pricing-table.active h4 {
+    color: #fff;
+}
+
+/* --------------------------------------------
+   ------- 12. testimonial Section  -----------
+   -------------------------------------------- */
+.single-app-testimonial {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 0px 5px #7063cf;
+  text-align: center;
+}
+.single-app-testimonial img {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #7063cf;
+  box-sizing: border-box;
+  padding: 5px;
+  background: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+}
+.testimonial {
+  padding: 30px;
+  padding-top: 70px;
+}
+
+/* --------------------------------------------
+   ------- 13. Footer Section  -----------
+   -------------------------------------------- */
+.footer-section {
+  background-image: url('assets/img/f-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-copyright p {
+    color: #7063cf;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+    line-height: 1.0;
+}
+.footer-copyright a {
+    color: #7063cf;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.footer-social ul li {
+  display: inline;
+}
+.footer-social ul li a {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #7063cf;
+  transition: all 0.3s linear 0s;
+}
+.footer-social ul li a:hover {
+  transform: translateY(-5px);
+}
+
+/* --------------------------------------------
+   ----- 14. Footer Widgets Section  --------
+   -------------------------------------------- */
+.single-widgets li {
+  display: block;
+}
